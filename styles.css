@@ -76,6 +76,10 @@ h3 {
 	display: inline-block;
 }
 
+svg .st1 {
+		display: none;
+}
+
 footer {
   width: 100%;
   margin-top: 100px;
@@ -92,7 +96,10 @@ footer {
 }
 
 .logo-title {
-	display: none;
+		color: #EAAA7F;
+		font-size: 21px;
+		text-transform: uppercase;
+		display: block;
 }
 
 .doggo {
@@ -122,17 +129,13 @@ footer {
 	color: #52595F;
 }
 
-@media (max-width: 425px) {
+@media (min-width: 425px) {
+
 	svg .st1 {
-		display: none;
+		display: inline;
 	}
 
 	.logo-title {
-		color: #EAAA7F;
-		font-size: 21px;
-		text-transform: uppercase;
-		display: block;
+	display: none;
 	}
-
-
 }
