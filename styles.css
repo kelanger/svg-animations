@@ -6,6 +6,7 @@ body {
   font-weight: 300;
   color: #111;
   background: #edeff0;
+  background-image: url("background.svg");
 }
 
 #container {
@@ -44,6 +45,22 @@ header nav {
 header nav ul li {
   display: inline-block;
   margin-right: 20px;
+  font-weight: bold;
+  color: #39ADD1;
+  transition: .3s;
+}
+
+.nav-icon {
+	fill: #39ADD1;
+	 transition: .3s;
+}
+
+header nav ul li:hover {
+  color: #ba8058;
+}
+
+header nav ul li:hover .nav-icon{
+  fill: #ba8058;
 }
 
 main {
@@ -54,9 +71,68 @@ main h2 {
   font-size: 28px;
 }
 
+h3 {
+	margin: 0;
+	display: inline-block;
+}
+
 footer {
   width: 100%;
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+#logo {
+	transition: .3s;
+}
+
+#logo:hover {
+	transform: rotate(-15deg);
+}
+
+.logo-title {
+	display: none;
+}
+
+.doggo {
+	display: inline-block;
+}
+
+.doggo p {
+	margin: 0;
+	color: #ba8058;
+	font-weight: bold;
+	text-align: center;
+}
+
+.sable {
+	color: #EAAA7F;
+}
+
+.fawn {
+	color: #F4C6A6;
+}
+
+.red {
+	color: #ba8058;
+}
+
+.stone {
+	color: #52595F;
+}
+
+@media (max-width: 425px) {
+	svg .st1 {
+		display: none;
+	}
+
+	.logo-title {
+		color: #EAAA7F;
+		font-size: 21px;
+		text-transform: uppercase;
+		display: block;
+	}
+
+
 }
